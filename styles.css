@@ -343,7 +343,7 @@ button {
 
 .points__grid {
     display: grid;
-    grid-template-columns: repeat(2, minmax(0, 1fr));
+    grid-template-columns: repeat(auto-fit, minmax(min(200px, 100%), 1fr));
     gap: 18px 20px;
 }
 
@@ -374,10 +374,10 @@ button {
 
 .points__mobile-label {
     display: none;
-    margin: 8px 0 4px;
     font-family: "Rubik", sans-serif;
     font-size: 24px;
     font-weight: 500;
+    margin: auto;
 }
 
 .point-card--soft {
@@ -386,7 +386,6 @@ button {
 
 .point-card--blue {
     background-image: url("./assets/point-b-bg.png");
-    white-space: nowrap;
 }
 
 .point-card--result-text {
@@ -479,10 +478,6 @@ button {
     text-align: center;
     font-size: clamp(34px, 4vw, 48px);
     line-height: 1;
-}
-
-.section-title--left {
-    text-align: left;
 }
 
 .cards-grid {
@@ -827,12 +822,11 @@ button {
     }
 
     .hero {
-        padding-top: 12px;
+        padding: 12px;
     }
 
     .hero__grid {
         position: relative;
-        min-height: 650px;
     }
 
     .hero__grid,
@@ -916,12 +910,6 @@ button {
     }
 
     .points__header {
-        grid-template-columns: 1fr;
-        gap: 8px;
-    }
-
-    .points__header-right,
-    .points__arrow {
         display: none;
     }
 
@@ -1058,13 +1046,6 @@ button {
         padding-block: 18px;
     }
 
-    .faq__contacts div,
-    .cta__actions,
-    .footer__inner {
-        flex-direction: column;
-        align-items: stretch;
-    }
-
     .cta .button {
         min-width: 0;
     }
@@ -1109,11 +1090,6 @@ button {
         margin: 108px 0 36px;
     }
 
-    .point-card--blue {
-        font-size: 12px;
-        padding-inline: 12px;
-    }
-
     .hero__bullets li,
     .hero__meta,
     .info-card p,
@@ -1146,5 +1122,9 @@ button {
 
     .section-title {
         font-size: 28px;
+    }
+
+    .hero .button {
+        margin-top: 38px;
     }
 }
