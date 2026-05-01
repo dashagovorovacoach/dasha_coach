@@ -1,418 +1,487 @@
 <!doctype html>
 <html lang="ru">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Даша Говорова — коуч</title>
-    <meta
-      name="description"
-      content="Коучинг с Дашей Говоровой: ясность, внутренняя опора и движение к своим целям без насилия над собой."
-    />
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,300..800;1,300..800&family=Montaga&family=Rubik:wght@400;500;700;800&display=swap"
-      rel="stylesheet"
-    />
-    <link rel="stylesheet" href="./styles.css" />
-  </head>
-  <body>
-    <div class="site-shell">
-      <header class="header">
-        <div class="container header__inner">
-          <a class="brand" href="#top">@dasha_your_coach</a>
-          <nav class="nav nav--desktop" aria-label="Основная навигация">
-            <a href="#coaching">Коучинг</a>
-            <a href="#about">Обо мне</a>
-            <a href="#process">Как работаем</a>
-            <a href="#reviews">Отзывы</a>
-            <a href="#pricing">Стоимость</a>
-          </nav>
-          <a class="header__cta" href="#cta">ЗАПИСАТЬСЯ</a>
-          <button
-            class="menu-toggle"
-            type="button"
-            aria-expanded="false"
-            aria-controls="mobile-menu"
-            aria-label="Открыть меню"
-          >
-            <span></span>
-            <span></span>
-            <span></span>
-          </button>
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Даша Говорова — коуч</title>
+        <meta
+            name="description"
+            content="Коучинг с Дашей Говоровой: ясность, внутренняя опора и движение к своим целям без насилия над собой."
+        />
+        <link rel="preconnect" href="https://fonts.googleapis.com" />
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+        <link
+            href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,300..800;1,300..800&family=Montaga&family=Rubik:wght@400;500;700;800&display=swap"
+            rel="stylesheet"
+        />
+        <link rel="stylesheet" href="./styles.css" />
+    </head>
+    <body>
+        <div class="site-shell">
+            <header class="header">
+                <div class="container header__inner">
+                    <a class="brand" href="#top">@dasha_your_coach</a>
+                    <nav class="nav nav--desktop" aria-label="Основная навигация">
+                        <a href="#coaching">Коучинг</a>
+                        <a href="#about">Обо мне</a>
+                        <a href="#process">Как работаем</a>
+                        <a href="#reviews">Отзывы</a>
+                        <a href="#pricing">Стоимость</a>
+                    </nav>
+                    <a class="header__cta" href="#cta">ЗАПИСАТЬСЯ</a>
+                    <button
+                        class="menu-toggle"
+                        type="button"
+                        aria-expanded="false"
+                        aria-controls="mobile-menu"
+                        aria-label="Открыть меню"
+                    >
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                    </button>
+                </div>
+                <div class="mobile-menu" id="mobile-menu" hidden>
+                    <button class="mobile-menu__close" type="button" aria-label="Закрыть меню">×</button>
+                    <nav class="mobile-menu__panel" aria-label="Мобильная навигация">
+                        <a href="#about">Обо мне</a>
+                        <a href="#process">Как работаем</a>
+                        <a href="#reviews">Отзывы</a>
+                        <a href="#pricing">Стоимость</a>
+                    </nav>
+                </div>
+            </header>
+
+            <main id="top">
+                <section class="hero section">
+                    <div class="container hero__grid">
+                        <div class="hero__content">
+                            <h1>
+                                <span class="hero__headline-line">Чувствуешь,</span>
+                                <span class="hero__headline-line">что можешь</span>
+                                <span class="hero__headline-line accent-highlight">больше?</span>
+                            </h1>
+                            <ul class="hero__bullets">
+                                <li>Без насилия над собой</li>
+                                <li>Без чужих сценариев</li>
+                                <li>С ясностью и внутренней опорой</li>
+                            </ul>
+                            <a
+                                class="button button--primary"
+                                href="https://calendar.app.google/MEnCDdue9a8xPX6LA"
+                                target="_blank"
+                                rel="noreferrer"
+                                >Записаться на бесплатное знакомство</a
+                            >
+                        </div>
+                        <div class="hero__visual">
+                            <div class="hero__pattern" aria-hidden="true"></div>
+                            <div class="hero__photo-wrap">
+                                <img src="./assets/hero-photo.png" alt="Даша Говорова" class="hero__photo" />
+                            </div>
+                        </div>
+                    </div>
+                </section>
+
+                <section class="section section--compact" id="coaching">
+                    <div class="container">
+                        <div class="points">
+                            <div class="points__header">
+                                <div class="points__header-col">
+                                    <p class="points__label">Точка А</p>
+                                </div>
+                                <img src="./assets/arrow.png" alt="" class="points__arrow" aria-hidden="true" />
+                                <div class="points__header-col points__header-right">
+                                    <p class="points__label">Точка Б</p>
+                                </div>
+                            </div>
+                            <div class="points__grid">
+                                <div class="points__column">
+                                    <div class="point-card point-card--soft">
+                                        <span class="point-card--start-text"
+                                            >«Чуствую, что <strong>могу больше</strong>»</span
+                                        >
+                                    </div>
+                                    <div class="point-card point-card--soft">
+                                        <span class="point-card--start-text"
+                                            >«<strong>Не понимаю</strong>, чего хочу на самом деле»</span
+                                        >
+                                    </div>
+                                    <div class="point-card point-card--soft">
+                                        <span class="point-card--start-text"
+                                            >«Знаю, чего хочу, но <strong>не делаю</strong>»</span
+                                        >
+                                    </div>
+                                    <div class="point-card point-card--soft">
+                                        <span class="point-card--start-text"
+                                            >«<strong>Не могу</strong> принять решение»</span
+                                        >
+                                    </div>
+                                    <div class="point-card point-card--soft">
+                                        <span class="point-card--start-text">«Хочу, но <strong>боюсь</strong>»</span>
+                                    </div>
+                                    <div class="point-card point-card--soft">
+                                        <span class="point-card--start-text"
+                                            >«Это не для меня, <strong>я не смогу</strong>»</span
+                                        >
+                                    </div>
+                                </div>
+                                <div class="points__column">
+                                    <p class="points__mobile-label">Точка Б</p>
+                                    <div class="point-card point-card--blue">
+                                        <span class="point-card--result-text"
+                                            ><strong>Реализую свой потенциал</strong> на все 100</span
+                                        >
+                                    </div>
+                                    <div class="point-card point-card--blue">
+                                        <span class="point-card--result-text"
+                                            ><strong>Знаю, чего хочу</strong> и что мне важно</span
+                                        >
+                                    </div>
+                                    <div class="point-card point-card--blue">
+                                        <span class="point-card--result-text"
+                                            ><strong>Двигаюсь к цели</strong> в своем ритме в потоке</span
+                                        >
+                                    </div>
+                                    <div class="point-card point-card--blue">
+                                        <span class="point-card--result-text"
+                                            ><strong>Принимаю решения</strong>, которые ощущаются правильными</span
+                                        >
+                                    </div>
+                                    <div class="point-card point-card--blue">
+                                        <span class="point-card--result-text"
+                                            >Спокойствие, ясность и <strong>чувство контроля</strong></span
+                                        >
+                                    </div>
+                                    <div class="point-card point-card--blue">
+                                        <span class="point-card--result-text"
+                                            ><strong>Верю в себя</strong> и чувствую внутреннюю опору</span
+                                        >
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+
+                <section class="banner">
+                    <div class="container">
+                        <p>СТАТЬ ВСЕМ, ЧЕМ ТЫ МОЖЕШЬ БЫТЬ</p>
+                    </div>
+                </section>
+
+                <section class="section section--compact">
+                    <div class="container">
+                        <div class="coaching-card">
+                            <h2 class="sr-only">Про коучинг</h2>
+                            <p>Коучинг помогает услышать себя.</p>
+                            <p>Все ответы уже внутри. Ты - эксперт в своей жизни.</p>
+                            <p>Задача коуча — создать пространство, где ответы проявятся.</p>
+                            <p>Когда решение рождается изнутри, появляется и энергия действовать.</p>
+                        </div>
+                    </div>
+                </section>
+
+                <section class="section" id="about">
+                    <div class="container about">
+                        <div class="about__text">
+                            <p class="about__intro">Привет, я Даша</p>
+                            <p>
+                                Коуч с образованием в практической психологии и коучинге (Институт прикладной
+                                психологии), прошла программу Coaching for Results. Каждую неделю провожу сессии под
+                                наблюдением супервизора — это профессиональный стандарт, который гарантирует мою
+                                постоянную прокачку.
+                            </p>
+                            <p>
+                                10 лет в HR, последние 4 - в международных компаниях (IT и EdTech). Это дало мне
+                                глубокое понимание людей.
+                            </p>
+                            <p class="about__marker">Я сама прошла трансформацию</p>
+                            <p>
+                                Когда-то я не принимала себя, стеснялась, боялась людей и не верила, что могу больше.
+                                Жила в маленьком городе, с маленькой зарплатой и маленькими мечтами.
+                            </p>
+                            <p>
+                                Сегодня у меня классная работа в международной компании, нашла призвание в коучинге, я
+                                живу на Бали и занимаюсь серфингом, путешествую. Открыта миру, принимаю себя, люблю
+                                людей. Живу жизнь, которую я когда-то даже не смела представить.
+                            </p>
+                            <p class="about__marker">Как это произошло?</p>
+                            <p>
+                                Все началось с изменения внутренних установок. С осознанной работы над мышлением и
+                                действиями по направлению к мечте. Именно так работает коучинг.
+                            </p>
+                        </div>
+                        <div class="about__visual">
+                            <h2>ОБО МНЕ</h2>
+                            <div class="about__photo-frame">
+                                <img
+                                    src="./assets/about-desktop.png"
+                                    alt="Портрет Даши"
+                                    class="about__photo about__photo--desktop"
+                                />
+                                <img
+                                    src="./assets/about-mobile-new.png"
+                                    alt="Портрет Даши"
+                                    class="about__photo about__photo--mobile"
+                                />
+                            </div>
+                        </div>
+                    </div>
+                </section>
+
+                <section class="section section--compact" id="process">
+                    <div class="container">
+                        <h2 class="section-title">Как проходит сессия</h2>
+                        <div class="cards-grid">
+                            <article class="info-card">
+                                <h3>Онлайн</h3>
+                                <p>Пришлю ссылку заранее. Нужно комфортное уединенное место, камера и микрофон.</p>
+                            </article>
+                            <article class="info-card">
+                                <h3>Бесплатное знакомство 30 минут</h3>
+                                <p>
+                                    Обсудим твой запрос, попробуешь формат. Иногда такой разговор дает больше ясности,
+                                    чем месяцы размышлений в голове.
+                                </p>
+                            </article>
+                            <article class="info-card">
+                                <h3>Коуч сессия 50 минут</h3>
+                                <p>
+                                    Настраиваемся на работу, через мои вопросы формулируешь цель. Оптимально — раз в
+                                    неделю или две.
+                                </p>
+                            </article>
+                        </div>
+                    </div>
+                </section>
+
+                <section class="section section--alt" id="reviews">
+                    <div class="container">
+                        <h2 class="section-title section-title--left">Отзывы</h2>
+                        <div class="reviews-grid">
+                            <div class="reviews-column">
+                                <article class="review-card">
+                                    <p>
+                                        Даша, спасибо тебе большое за сессию! Всего один час, а в голове как будто
+                                        генеральную уборку сделали, хаосный бардак
+                                        <strong>разложили по полочкам</strong>, и теперь
+                                        <strong>можно делать действия</strong>, а не сидеть и «пережевывать» мысли
+                                        дальше в бездействии.
+                                    </p>
+                                    <p>
+                                        А еще ощущаю облегчение и прояснение, потому что я сняла с выбора клеймо «вопрос
+                                        жизни и смерти». «Я сам» - это, конечно, хорошо, но с помощью и взглядом со
+                                        стороны - <strong>намного продуктивнее!</strong>
+                                    </p>
+                                    <span>Ира, 34 года</span>
+                                </article>
+                                <article class="review-card">
+                                    <p>
+                                        Дашуль, спасибо тебе большое за консультации! Я получила такое вдохновение. С
+                                        тобой как-то <strong>комфортно и безопасно.</strong>
+                                    </p>
+                                    <p>
+                                        Ощущение после встречи самое позитивное. Такой происходит приятный подъем, что
+                                        сразу понимаешь в какую сторону и с каким темпом
+                                        <strong>двигаться к цели!</strong>
+                                    </p>
+                                    <p>
+                                        А самое главное приходит
+                                        <strong>ясность и уверенность в намеченном пути!</strong>
+                                    </p>
+                                    <span>Виктория, 37 лет</span>
+                                </article>
+                            </div>
+                            <div class="reviews-column">
+                                <article class="review-card">
+                                    <p>
+                                        Честно, никогда не нравилось слово «коуч». Всегда вызывало ассоциации с пустыми
+                                        разговорами. Но я хочу поделиться опытом общения с Дарьей — это был
+                                        <strong>совершенно другой уровень!</strong>
+                                    </p>
+                                    <p>
+                                        За час она помогла мне <strong>увидеть то, чего я не замечал месяцами.</strong>
+                                        Без советов, без давления - только вопросы, которые
+                                        <strong>вдруг открыли во мне кучу ответов.</strong> Это было мощно!!!
+                                    </p>
+                                    <p>
+                                        Я вышел с ощущением, что всё по полочкам. Просто высший пилотаж! Спасибо Дарья!
+                                    </p>
+                                    <span>Евгений, 42 года</span>
+                                </article>
+                                <article class="review-card">
+                                    <p>
+                                        Дашенька, я получила искренне удовольствие от сессии! Когда было ощущение, что
+                                        копать уже некуда, ты виртуозно <strong>копнула прямо в точку!</strong>
+                                    </p>
+                                    <p>Ты действительно крута! Благодарю тебя!</p>
+                                    <span>Кристина, 30 лет</span>
+                                </article>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+
+                <section class="section" id="pricing">
+                    <div class="container pricing">
+                        <h2 class="section-title">Стоимость</h2>
+                        <div class="pricing-list">
+                            <article class="price-row">
+                                <h3>1 сессия</h3>
+                                <p>Прояснить ситуацию, убрать хаос, определить направления</p>
+                                <strong>5 000 ₽</strong>
+                                <span class="price-row__old price-row__old--empty" aria-hidden="true"></span>
+                            </article>
+                            <article class="price-row">
+                                <h3>6 сессий</h3>
+                                <p>Точечная работа с конкретным запросом</p>
+                                <strong>27 000 ₽</strong>
+                                <span class="price-row__old">30 000 ₽</span>
+                            </article>
+                            <article class="price-row">
+                                <h3>9 сессий</h3>
+                                <p>Глубокая работа с установками и состоянием</p>
+                                <strong>39 000 ₽</strong>
+                                <span class="price-row__old">45 000 ₽</span>
+                            </article>
+                            <article class="price-row">
+                                <h3>12 сессий</h3>
+                                <p>Трансформация: новый взгляд на себя и жизнь</p>
+                                <strong>49 000 ₽</strong>
+                                <span class="price-row__old">60 000 ₽</span>
+                            </article>
+                        </div>
+                        <p class="pricing__hint">
+                            Не знаешь, с чего начать? Начни с бесплатного знакомства — вместе поймем, какой формат тебе
+                            подойдет.
+                        </p>
+                        <a
+                            class="button button--secondary"
+                            href="https://calendar.app.google/MEnCDdue9a8xPX6LA"
+                            target="_blank"
+                            rel="noreferrer"
+                            >Записаться на бесплатное знакомство</a
+                        >
+                    </div>
+                </section>
+
+                <section class="section section--alt faq" id="faq">
+                    <div class="container">
+                        <h2 class="section-title">Частые вопросы</h2>
+                        <div class="faq-list">
+                            <details class="faq-item">
+                                <summary>Чем коуч отличается от психолога?</summary>
+                                <p>Психолог помогает разобраться, почему так происходит.</p>
+                                <p>Коуч помогает понять, чего ты хочешь сейчас и как к этому прийти.</p>
+                                <p>
+                                    Если коротко: психология — про причины, коучинг — про движение и результат. Подходы
+                                    не конкурируют, а дополняют друг друга.
+                                </p>
+                            </details>
+                            <details class="faq-item">
+                                <summary>Я никогда не была на коучинге. С чего начать?</summary>
+                                <div>
+                                    <p>С бесплатной встречи-знакомства на 30 минут.</p>
+                                    <p>
+                                        Разберём твой запрос, попробуешь формат, получишь первые инсайты и поймёшь,
+                                        подходим ли мы друг другу.
+                                    </p>
+                                    <p>
+                                        Иногда одного разговора достаточно, чтобы из хаоса появилась ясность и следующий
+                                        шаг.
+                                    </p>
+                                </div>
+                            </details>
+                            <details class="faq-item">
+                                <summary>Сколько сессий мне нужно?</summary>
+                                <p>Зависит от запроса и уровня ясности.</p>
+                                <p>
+                                    1–3 сессии подходят, если у тебя уже есть опыт в коучинге и ты чётко понимаешь, с
+                                    чем хочешь поработать.
+                                </p>
+                                <p>
+                                    6–12 сессий — если хочется глубже разобраться в себе, изменить мышление и выйти на
+                                    новый уровень.
+                                </p>
+                            </details>
+                            <details class="faq-item">
+                                <summary>Можно ли получить результат за одну сессию?</summary>
+                                <p>
+                                    Да. Даже бесплатная сессия-знакомство даёт инсайты. Одна сессия — это уже ценность:
+                                    ясность там, где был туман, и конкретный шаг вперёд. Но устойчивые изменения и
+                                    ощутимые результаты формируются в процессе регулярной работы.
+                                </p>
+                            </details>
+                            <details class="faq-item">
+                                <summary>Как подготовиться к первой сессии?</summary>
+                                <p>Тихое место, включенная камера, 50 минут без отвлечений.</p>
+                                <p>Лучше всего — сформулировать свой запрос через «хочу».</p>
+                                <p>Не: «у меня проблемы с решениями»</p>
+                                <p>А: «хочу научиться доверять себе»</p>
+                                <p>Если не получается сформулировать — это нормально, сделаем вместе.</p>
+                                <p>Это сильно влияет на глубину результата.</p>
+                            </details>
+                        </div>
+                        <div class="faq__contacts">
+                            <p>Не нашел ответ на свой вопрос? Спроси меня:</p>
+                            <div>
+                                <a href="https://t.me/dashagovorova" target="_blank" rel="noreferrer">Telegram</a>
+                                <a href="https://wa.me/+79290878821" target="_blank" rel="noreferrer">WhatsApp</a>
+                                <a href="https://vk.com/id94197597" target="_blank" rel="noreferrer">ВКонтакте</a>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+
+                <section class="section cta" id="cta">
+                    <div class="container cta__inner">
+                        <h2>Готов реализовывать<br />свой <span class="accent-highlight">потенциал?</span></h2>
+                        <div class="cta__actions">
+                            <a
+                                class="button button--primary"
+                                href="https://calendar.app.google/MEnCDdue9a8xPX6LA"
+                                target="_blank"
+                                rel="noreferrer"
+                                >Записаться на бесплатное знакомство</a
+                            >
+                            <a
+                                class="button button--secondary"
+                                href="https://calendar.google.com/calendar/u/0/appointments/schedules/AcZssZ1PoDEQ1r66B7Ift-5V76conDjTL39-B2wSkbEkl5if2nd5TPceKlMEREulWbJ_zlWeh3FeMdAF"
+                                target="_blank"
+                                rel="noreferrer"
+                                >Записаться на полную сессию</a
+                            >
+                        </div>
+                    </div>
+                </section>
+            </main>
+
+            <footer class="footer">
+                <div class="container footer__inner">
+                    <div class="footer__left">
+                        <div class="footer__social-links" aria-label="Социальные сети">
+                            <a href="https://t.me/dashagovorova" target="_blank" rel="noreferrer" aria-label="Telegram">
+                                <img src="./assets/icon-telegram.png" alt="" />
+                            </a>
+                            <a
+                                href="https://www.instagram.com/dasha_your_coach/"
+                                target="_blank"
+                                rel="noreferrer"
+                                aria-label="Instagram"
+                            >
+                                <img src="./assets/icon-instagram.png" alt="" />
+                            </a>
+                            <a href="https://vk.com/id94197597" target="_blank" rel="noreferrer" aria-label="ВКонтакте">
+                                <img src="./assets/icon-vk.png" alt="" />
+                            </a>
+                        </div>
+                    </div>
+                    <p>© 2026 @dasha_your_coach</p>
+                </div>
+            </footer>
         </div>
-        <div class="mobile-menu" id="mobile-menu" hidden>
-          <button class="mobile-menu__close" type="button" aria-label="Закрыть меню">×</button>
-          <nav class="mobile-menu__panel" aria-label="Мобильная навигация">
-            <a href="#about">Обо мне</a>
-            <a href="#process">Как работаем</a>
-            <a href="#reviews">Отзывы</a>
-            <a href="#pricing">Стоимость</a>
-          </nav>
-        </div>
-      </header>
 
-      <main id="top">
-        <section class="hero section">
-          <div class="container hero__grid">
-            <div class="hero__content">
-              <h1>
-                <span class="hero__headline-line">Чувствуешь,</span>
-                <span class="hero__headline-line">что можешь</span>
-                <span class="hero__headline-line accent-highlight">больше?</span>
-              </h1>
-              <ul class="hero__bullets">
-                <li>Без насилия над собой</li>
-                <li>Без чужих сценариев</li>
-                <li>С ясностью и внутренней опорой</li>
-              </ul>
-              <a
-                class="button button--primary"
-                href="https://calendar.app.google/MEnCDdue9a8xPX6LA"
-                target="_blank"
-                rel="noreferrer"
-                >Записаться на бесплатное знакомство</a
-              >
-            </div>
-            <div class="hero__visual">
-              <div class="hero__pattern" aria-hidden="true"></div>
-              <div class="hero__photo-wrap">
-                <img src="./assets/hero-photo.png" alt="Даша Говорова" class="hero__photo" />
-              </div>
-            </div>
-          </div>
-        </section>
-
-        <section class="section section--compact" id="coaching">
-          <div class="container">
-            <div class="points">
-              <div class="points__header">
-                <div class="points__header-col">
-                  <p class="points__label">Точка А</p>
-                </div>
-                <img src="./assets/arrow.png" alt="" class="points__arrow" aria-hidden="true" />
-                <div class="points__header-col points__header-right">
-                  <p class="points__label">Точка Б</p>
-                </div>
-              </div>
-              <div class="points__grid">
-                <div class="points__column">
-                  <div class="point-card point-card--soft"><span class="point-card--start-text">«Чуствую, что <strong>могу больше</strong>»</span></div>
-                  <div class="point-card point-card--soft"><span class="point-card--start-text">«<strong>Не понимаю</strong>, чего хочу на самом деле»</span></div>
-                  <div class="point-card point-card--soft"><span class="point-card--start-text">«Знаю, чего хочу, но <strong>не делаю</strong>»<span></div>
-                  <div class="point-card point-card--soft"><span class="point-card--start-text">«<strong>Не могу</strong> принять решение»</span></div>
-                  <div class="point-card point-card--soft"><span class="point-card--start-text">«Хочу, но <strong>боюсь</strong>»<span></div>
-                  <div class="point-card point-card--soft"><span class="point-card--start-text">«Это не для меня, <strong>я не смогу</strong>»<span></div>
-                </div>
-                <div class="points__column">
-                  <p class="points__mobile-label">Точка Б</p>
-                  <div class="point-card point-card--blue"><span class="point-card--result-text"><strong>Реализую свой потенциал</strong> на все 100</span></div>
-                  <div class="point-card point-card--blue"><span class="point-card--result-text"><strong>Знаю, чего хочу</strong> и что мне важно</span></div>
-                  <div class="point-card point-card--blue"><span class="point-card--result-text"><strong>Двигаюсь к цели</strong> в своем ритме в потоке</span></div>
-                  <div class="point-card point-card--blue"><span class="point-card--result-text"><strong>Принимаю решения</strong>, которые ощущаются правильными</span></div>
-                  <div class="point-card point-card--blue"><span class="point-card--result-text">Спокойствие, ясность и <strong>чувство контроля</strong></span></div>
-                  <div class="point-card point-card--blue"><span class="point-card--result-text"><strong>Верю в себя</strong> и чувствую внутреннюю опору</span></div>
-                </div>
-              </div>
-            </div>
-          </div>
-        </section>
-
-        <section class="banner">
-          <div class="container">
-            <p>СТАТЬ ВСЕМ, ЧЕМ ТЫ МОЖЕШЬ БЫТЬ</p>
-          </div>
-        </section>
-
-        <section class="section section--compact">
-          <div class="container">
-            <div class="coaching-card">
-              <h2 class="sr-only">Про коучинг</h2>
-              <p>Коучинг помогает услышать себя.</p>
-              <p>Все ответы уже внутри. Ты - эксперт в своей жизни.</p>
-              <p>Задача коуча — создать пространство, где ответы проявятся.</p>
-              <p>Когда решение рождается изнутри, появляется и энергия действовать.</p>
-            </div>
-          </div>
-        </section>
-
-        <section class="section" id="about">
-          <div class="container about">
-            <div class="about__text">
-              <p class="about__intro">Привет, я Даша</p>
-              <p>
-                Коуч с образованием в практической психологии и коучинге (Институт прикладной
-                психологии), прошла программу Coaching for Results. Каждую неделю провожу сессии
-                под наблюдением супервизора — это профессиональный стандарт, который гарантирует
-                мою постоянную прокачку.
-              </p>
-              <p>
-                10 лет в HR, последние 4 - в международных компаниях (IT и EdTech). Это дало мне
-                глубокое понимание людей.
-              </p>
-              <p class="about__marker">
-                Я сама прошла трансформацию
-              </p>
-              <p>
-                Когда-то я не принимала себя, стеснялась, боялась людей и не верила, что могу
-                больше. Жила в маленьком городе, с маленькой зарплатой и маленькими мечтами.
-              </p>
-              <p>
-                Сегодня у меня классная работа в международной компании, нашла призвание в
-                коучинге, я живу на Бали и занимаюсь серфингом, путешествую. Открыта миру,
-                принимаю себя, люблю людей. Живу жизнь, которую я когда-то даже не смела
-                представить.
-              </p>
-              <p class="about__marker">Как это произошло?</p>
-              <p>
-                Все началось с изменения внутренних установок. С осознанной работы над мышлением и
-                действиями по направлению к мечте. Именно так работает коучинг.
-              </p>
-            </div>
-            <div class="about__visual">
-              <h2>ОБО МНЕ</h2>
-              <div class="about__photo-frame">
-                <img src="./assets/about-desktop.png" alt="Портрет Даши" class="about__photo about__photo--desktop" />
-                <img src="./assets/about-mobile-new.png" alt="Портрет Даши" class="about__photo about__photo--mobile" />
-              </div>
-            </div>
-          </div>
-        </section>
-
-        <section class="section section--compact" id="process">
-          <div class="container">
-            <h2 class="section-title">Как проходит сессия</h2>
-            <div class="cards-grid">
-              <article class="info-card">
-                <h3>Онлайн</h3>
-                <p>Пришлю ссылку заранее. Нужно комфортное уединенное место, камера и микрофон.</p>
-              </article>
-              <article class="info-card">
-                <h3>Бесплатное знакомство 30 минут</h3>
-                <p>Обсудим твой запрос, попробуешь формат. Иногда такой разговор дает больше ясности, чем месяцы размышлений в голове.</p>
-              </article>
-              <article class="info-card">
-                <h3>Коуч сессия 50 минут</h3>
-                <p>Настраиваемся на работу, через мои вопросы формулируешь цель. Оптимально — раз в неделю или две.</p>
-              </article>
-            </div>
-          </div>
-        </section>
-
-        <section class="section section--alt" id="reviews">
-          <div class="container">
-            <h2 class="section-title section-title--left">Отзывы</h2>
-            <div class="reviews-grid">
-              <div class="reviews-column">
-                <article class="review-card">
-                  <p>
-                    Даша, спасибо тебе большое за сессию! Всего один час, а в голове как будто
-                    генеральную уборку сделали, хаосный бардак <strong>разложили по полочкам</strong>,
-                    и теперь <strong>можно делать действия</strong>, а не сидеть и «пережевывать» мысли
-                    дальше в бездействии.
-                  </p>
-                  <p>
-                    А еще ощущаю облегчение и прояснение, потому что я сняла с выбора клеймо
-                    «вопрос жизни и смерти». «Я сам» - это, конечно, хорошо, но с помощью и взглядом
-                    со стороны - <strong>намного продуктивнее!</strong>
-                  </p>
-                  <span>Ира, 34 года</span>
-                </article>
-                <article class="review-card">
-                  <p>
-                    Дашуль, спасибо тебе большое за консультации! Я получила такое вдохновение. С
-                    тобой как-то <strong>комфортно и безопасно.</strong>
-                  </p>
-                  <p>
-                    Ощущение после встречи самое позитивное. Такой происходит приятный подъем, что
-                    сразу понимаешь в какую сторону и с каким темпом
-                    <strong>двигаться к цели!</strong>
-                  </p>
-                  <p>А самое главное приходит <strong>ясность и уверенность в намеченном пути!</strong></p>
-                  <span>Виктория, 37 лет</span>
-                </article>
-              </div>
-              <div class="reviews-column">
-                <article class="review-card">
-                  <p>
-                    Честно, никогда не нравилось слово «коуч». Всегда вызывало ассоциации с пустыми
-                    разговорами. Но я хочу поделиться опытом общения с Дарьей — это был
-                    <strong>совершенно другой уровень!</strong>
-                  </p>
-                  <p>
-                    За час она помогла мне <strong>увидеть то, чего я не замечал месяцами.</strong>
-                    Без советов, без давления - только вопросы, которые
-                    <strong>вдруг открыли во мне кучу ответов.</strong> Это было мощно!!!
-                  </p>
-                  <p>Я вышел с ощущением, что всё по полочкам. Просто высший пилотаж! Спасибо Дарья!</p>
-                  <span>Евгений, 42 года</span>
-                </article>
-                <article class="review-card">
-                  <p>
-                    Дашенька, я получила искренне удовольствие от сессии! Когда было ощущение, что
-                    копать уже некуда, ты виртуозно <strong>копнула прямо в точку!</strong>
-                  </p>
-                  <p>Ты действительно крута! Благодарю тебя!</p>
-                  <span>Кристина, 30 лет</span>
-                </article>
-              </div>
-            </div>
-          </div>
-        </section>
-
-        <section class="section" id="pricing">
-          <div class="container pricing">
-            <h2 class="section-title">Стоимость</h2>
-            <div class="pricing-list">
-              <article class="price-row">
-                <h3>1 сессия</h3>
-                <p>Прояснить ситуацию, убрать хаос, определить направления</p>
-                <strong>5 000 ₽</strong>
-                <span class="price-row__old price-row__old--empty" aria-hidden="true"></span>
-              </article>
-              <article class="price-row">
-                <h3>6 сессий</h3>
-                <p>Точечная работа с конкретным запросом</p>
-                <strong>27 000 ₽</strong>
-                <span class="price-row__old">30 000 ₽</span>
-              </article>
-              <article class="price-row">
-                <h3>9 сессий</h3>
-                <p>Глубокая работа с установками и состоянием</p>
-                <strong>39 000 ₽</strong>
-                <span class="price-row__old">45 000 ₽</span>
-              </article>
-              <article class="price-row">
-                <h3>12 сессий</h3>
-                <p>Трансформация: новый взгляд на себя и жизнь</p>
-                <strong>49 000 ₽</strong>
-                <span class="price-row__old">60 000 ₽</span>
-              </article>
-            </div>
-            <p class="pricing__hint">
-              Не знаешь, с чего начать? Начни с бесплатного знакомства — вместе поймем, какой
-              формат тебе подойдет.
-            </p>
-            <a
-              class="button button--secondary"
-              href="https://calendar.app.google/MEnCDdue9a8xPX6LA"
-              target="_blank"
-              rel="noreferrer"
-              >Записаться на бесплатное знакомство</a
-            >
-          </div>
-        </section>
-
-        <section class="section section--alt faq" id="faq">
-          <div class="container">
-            <h2 class="section-title">Частые вопросы</h2>
-            <div class="faq-list">
-              <details class="faq-item">
-                <summary>Чем коуч отличается от психолога?</summary>
-                <p>Психолог помогает разобраться, почему так происходит.</p>
-                <p>Коуч помогает понять, чего ты хочешь сейчас и как к этому прийти.</p>
-                <p>
-                  Если коротко: психология — про причины, коучинг — про движение и результат.
-                  Подходы не конкурируют, а дополняют друг друга.
-                </p>
-              </details>
-              <details class="faq-item">
-                <summary>Я никогда не была на коучинге. С чего начать?</summary>
-                <div>
-                  <p>С бесплатной встречи-знакомства на 30 минут.</p>
-                  <p>Разберём твой запрос, попробуешь формат, получишь первые инсайты и поймёшь, подходим ли мы друг другу.</p>
-                  <p>Иногда одного разговора достаточно, чтобы из хаоса появилась ясность и следующий шаг.</p>
-                </div>
-              </details>
-              <details class="faq-item">
-                <summary>Сколько сессий мне нужно?</summary>
-                <p>Зависит от запроса и уровня ясности.</p>
-                <p>
-                  1–3 сессии подходят, если у тебя уже есть опыт в коучинге и ты чётко понимаешь,
-                  с чем хочешь поработать.
-                </p>
-                <p>
-                  6–12 сессий — если хочется глубже разобраться в себе, изменить мышление и выйти
-                  на новый уровень.
-                </p>
-              </details>
-              <details class="faq-item">
-                <summary>Можно ли получить результат за одну сессию?</summary>
-                <p>
-                  Да. Даже бесплатная сессия-знакомство даёт инсайты. Одна сессия — это уже
-                  ценность: ясность там, где был туман, и конкретный шаг вперёд. Но устойчивые
-                  изменения и ощутимые результаты формируются в процессе регулярной работы.
-                </p>
-              </details>
-              <details class="faq-item">
-                <summary>Как подготовиться к первой сессии?</summary>
-                <p>Тихое место, включенная камера, 50 минут без отвлечений.</p>
-                <p>Лучше всего — сформулировать свой запрос через «хочу».</p>
-                <p>Не: «у меня проблемы с решениями»</p>
-                <p>А: «хочу научиться доверять себе»</p>
-                <p>Если не получается сформулировать — это нормально, сделаем вместе.</p>
-                <p>Это сильно влияет на глубину результата.</p>
-              </details>
-            </div>
-            <div class="faq__contacts">
-              <p>Не нашел ответ на свой вопрос? Спроси меня:</p>
-              <div>
-                <a href="https://t.me/dashagovorova" target="_blank" rel="noreferrer">Telegram</a>
-                <a href="https://wa.me/+79290878821" target="_blank" rel="noreferrer">WhatsApp</a>
-                <a href="https://vk.com/id94197597" target="_blank" rel="noreferrer">ВКонтакте</a>
-              </div>
-            </div>
-          </div>
-        </section>
-
-        <section class="section cta" id="cta">
-          <div class="container cta__inner">
-            <h2>Готов реализовывать<br />свой <span class="accent-highlight">потенциал?</span></h2>
-            <div class="cta__actions">
-              <a
-                class="button button--primary"
-                href="https://calendar.app.google/MEnCDdue9a8xPX6LA"
-                target="_blank"
-                rel="noreferrer"
-                >Записаться на бесплатное знакомство</a
-              >
-              <a
-                class="button button--secondary"
-                href="https://calendar.google.com/calendar/u/0/appointments/schedules/AcZssZ1PoDEQ1r66B7Ift-5V76conDjTL39-B2wSkbEkl5if2nd5TPceKlMEREulWbJ_zlWeh3FeMdAF"
-                target="_blank"
-                rel="noreferrer"
-                >Записаться на полную сессию</a
-              >
-            </div>
-          </div>
-        </section>
-      </main>
-
-      <footer class="footer">
-        <div class="container footer__inner">
-          <div class="footer__left">
-            <div class="footer__social-links" aria-label="Социальные сети">
-              <a href="https://t.me/dashagovorova" target="_blank" rel="noreferrer" aria-label="Telegram">
-                <img src="./assets/icon-telegram.png" alt="" />
-              </a>
-              <a
-                href="https://www.instagram.com/dasha_your_coach/"
-                target="_blank"
-                rel="noreferrer"
-                aria-label="Instagram"
-              >
-                <img src="./assets/icon-instagram.png" alt="" />
-              </a>
-              <a href="https://vk.com/id94197597" target="_blank" rel="noreferrer" aria-label="ВКонтакте">
-                <img src="./assets/icon-vk.png" alt="" />
-              </a>
-            </div>
-          </div>
-          <p>© 2026 @dasha_your_coach</p>
-        </div>
-      </footer>
-    </div>
-
-    <script src="./script.js"></script>
-  </body>
+        <script src="./script.js"></script>
+    </body>
 </html>
