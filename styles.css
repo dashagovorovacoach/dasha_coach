@@ -787,6 +787,14 @@ button {
     border: 0;
 }
 
+#coaching,
+#about,
+#process,
+#reviews,
+#pricing {
+    scroll-margin-top: 55px;
+}
+
 @media (max-width: 1100px) {
     .hero__bullets li,
     .point-card,
