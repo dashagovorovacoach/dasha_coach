@@ -1132,4 +1132,12 @@ button {
     .hero .button {
         margin-top: 38px;
     }
+
+    #coaching,
+    #about,
+    #process,
+    #reviews,
+    #pricing {
+        scroll-margin-top: 0;
+    }
 }
