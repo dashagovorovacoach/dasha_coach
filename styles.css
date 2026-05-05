@@ -487,21 +487,26 @@ button {
 }
 
 .info-card {
-    background: rgba(219, 230, 246, 0.62);
+    background: #becfe6;
     border-radius: 22px;
     padding: 24px;
     min-height: 100%;
 }
 
-.info-card {
-    background:
-        url("./assets/session-card-bg.png") center top / 100% 100% no-repeat,
-        rgba(180, 201, 234, 0.55);
-    padding-top: 38px;
+.circles {
+    display: flex;
+    justify-content: space-between;
+}
+
+.circle {
+    width: 24px;
+    height: 24px;
+    border-radius: 50%;
+    background: #ffffff;
 }
 
 .info-card h3 {
-    margin: 10px 0 12px;
+    margin: 20px 0 12px;
     font-size: 24px;
 }
 
@@ -981,14 +986,6 @@ button {
 
     .about__photo--mobile {
         display: block;
-    }
-
-    .info-card {
-        background:
-            url("./assets/mobile-how.png") center top / 100% 100% no-repeat,
-            rgba(180, 201, 234, 0.55);
-        min-height: 252px;
-        padding: 30px 18px 18px;
     }
 
     .info-card h3 {
