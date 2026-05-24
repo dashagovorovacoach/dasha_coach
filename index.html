@@ -4,6 +4,7 @@
         <meta charset="UTF-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
         <title>Даша Говорова — коуч</title>
+        <link rel="icon" href="./assets/site-icon.png" type="image/png" />
         <meta
             name="description"
             content="Коучинг с Дашей Говоровой: ясность, внутренняя опора и движение к своим целям без насилия над собой."
@@ -16,6 +17,16 @@
         />
         <link rel="stylesheet" href="./styles.css" />
     </head>
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-17N0CS6RSX"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag() {
+            dataLayer.push(arguments);
+        }
+        gtag("js", new Date());
+
+        gtag("config", "G-17N0CS6RSX");
+    </script>
     <body>
         <div class="site-shell">
             <header class="header">
@@ -41,15 +52,12 @@
                         <span></span>
                     </button>
                 </div>
-                <div class="mobile-menu" id="mobile-menu" hidden>
-                    <button class="mobile-menu__close" type="button" aria-label="Закрыть меню">×</button>
-                    <nav class="mobile-menu__panel" aria-label="Мобильная навигация">
-                        <a href="#about">Обо мне</a>
-                        <a href="#process">Как работаем</a>
-                        <a href="#reviews">Отзывы</a>
-                        <a href="#pricing">Стоимость</a>
-                    </nav>
-                </div>
+                <nav class="mobile-menu" aria-label="Мобильная навигация">
+                    <a href="#about">Обо мне</a>
+                    <a href="#process">Как работаем</a>
+                    <a href="#reviews">Отзывы</a>
+                    <a href="#pricing">Стоимость</a>
+                </nav>
             </header>
 
             <main id="top">
@@ -388,7 +396,7 @@
                             подойдет.
                         </p>
                         <a
-                            class="button button--secondary"
+                            class="button button--primary"
                             href="https://calendar.app.google/MEnCDdue9a8xPX6LA"
                             target="_blank"
                             rel="noreferrer"
@@ -402,7 +410,10 @@
                         <h2 class="section-title">Частые вопросы</h2>
                         <div class="faq-list">
                             <details class="faq-item">
-                                <summary>Чем коуч отличается от психолога?</summary>
+                                <summary>
+                                    Чем коуч отличается от психолога?
+                                    <div class="plusminus"></div>
+                                </summary>
                                 <div class="content">
                                     <p>Психолог помогает разобраться, почему так происходит.</p>
                                     <p>Коуч помогает понять, чего ты хочешь сейчас и как к этому прийти.</p>
@@ -413,7 +424,10 @@
                                 </div>
                             </details>
                             <details class="faq-item">
-                                <summary>Я никогда не была на коучинге. С чего начать?</summary>
+                                <summary>
+                                    Я никогда не была на коучинге. С чего начать?
+                                    <div class="plusminus"></div>
+                                </summary>
                                 <div class="content">
                                     <p>С бесплатной встречи-знакомства на 30 минут.</p>
                                     <p>
@@ -427,7 +441,10 @@
                                 </div>
                             </details>
                             <details class="faq-item">
-                                <summary>Сколько сессий мне нужно?</summary>
+                                <summary>
+                                    Сколько сессий мне нужно?
+                                    <div class="plusminus"></div>
+                                </summary>
                                 <div class="content">
                                     <p>Зависит от запроса и уровня ясности.</p>
                                     <p>
@@ -441,7 +458,10 @@
                                 </div>
                             </details>
                             <details class="faq-item">
-                                <summary>Можно ли получить результат за одну сессию?</summary>
+                                <summary>
+                                    Можно ли получить результат за одну сессию?
+                                    <div class="plusminus"></div>
+                                </summary>
                                 <div class="content">
                                     <p>
                                         Да. Даже бесплатная сессия-знакомство даёт инсайты. Одна сессия — это уже
@@ -451,7 +471,10 @@
                                 </div>
                             </details>
                             <details class="faq-item">
-                                <summary>Как подготовиться к первой сессии?</summary>
+                                <summary>
+                                    Как подготовиться к первой сессии?
+                                    <div class="plusminus"></div>
+                                </summary>
                                 <div class="content">
                                     <p>Тихое место, включенная камера, 50 минут без отвлечений.</p>
                                     <p>Лучше всего — сформулировать свой запрос через «хочу».</p>

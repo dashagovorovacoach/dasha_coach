@@ -84,15 +84,15 @@ class Accordion {
 
 const menuToggle = document.querySelector(".menu-toggle");
 const mobileMenu = document.querySelector(".mobile-menu");
-const mobileMenuClose = document.querySelector(".mobile-menu__close");
+const mobileMenuClose = document.querySelector(".menu-toggle__close");
 const mobileMenuLinks = document.querySelectorAll(".mobile-menu a");
 const faqItems = document.querySelectorAll(".faq-item");
 
 const setMenuState = (open) => {
     if (!menuToggle || !mobileMenu) return;
     menuToggle.setAttribute("aria-expanded", String(open));
-    mobileMenu.hidden = !open;
-    document.body.classList.toggle("menu-open", open);
+    menuToggle.classList.toggle("menu-toggle--expanded", open)
+    mobileMenu.classList.toggle("mobile-menu--expanded", open)
 };
 
 menuToggle?.addEventListener("click", () => {

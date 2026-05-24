@@ -3,13 +3,18 @@
     --surface: #fffdf9;
     --surface-soft: #f4eee6;
     --surface-blue: #d7e2f2;
+    --point-blue: #d6e1ec;
+    --point-soft: #e8e6e1;
     --surface-blue-deep: #8396b6;
     --surface-blue-mid: #b4c9ea;
     --text: #151515;
     --muted: #6f6f6f;
     --line: rgba(79, 97, 132, 0.18);
     --accent: #efff4f;
-    --shadow: 0 24px 60px rgba(73, 84, 107, 0.08);
+    --shadow: 0 -24px -60px rgba(73, 84, 107, 0.08);
+    --mobile-nav-shadow:
+        rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px,
+        rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
     --radius-xl: 32px;
     --radius-lg: 24px;
     --radius-md: 18px;
@@ -80,9 +85,10 @@ button {
 }
 
 .header {
-    position: sticky;
+    position: fixed;
     top: 0;
     z-index: 50;
+    width: 100vw;
     backdrop-filter: blur(14px);
     background: rgba(252, 250, 247, 0.82);
     border-bottom: 1px solid rgba(131, 150, 182, 0.08);
@@ -92,31 +98,25 @@ button {
     display: flex;
     align-items: center;
     justify-content: space-between;
-    gap: 24px;
-    padding: 18px 0;
+    height: 70px;
 }
 
-.brand,
-.eyebrow {
+.brand {
     color: #8d8f95;
-    font-size: 14px;
+    font-size: 16px;
     font-weight: 600;
-}
-
-.eyebrow--mobile {
-    display: none;
 }
 
 .nav {
     display: flex;
     gap: 28px;
-    font-size: 14px;
+    font-size: 16px;
     color: #7d838f;
 }
 
 .nav a,
 .header__cta,
-.mobile-menu__panel a,
+.mobile-menu a,
 .button,
 .faq__contacts a {
     transition:
@@ -135,62 +135,71 @@ button {
 
 .header__cta {
     color: #6c7f9f;
-    font-size: 16px;
+    font-size: 18px;
     font-weight: 800;
     letter-spacing: 0.03em;
 }
+
+/***** mobile toggle button *****/
 
 .menu-toggle {
     display: none;
     width: 42px;
     height: 42px;
-    padding: 8px;
+    padding: 4px;
     border: 0;
     background: transparent;
     border-radius: 12px;
     cursor: pointer;
+    transform-origin: 0 4px;
+    z-index: 9999;
 }
 
 .menu-toggle span {
     display: block;
-    width: 20px;
-    height: 2px;
+    height: 4px;
     margin: 4px auto;
     border-radius: 999px;
     background: #7789a8;
+    transition:
+        transform 0.5s cubic-bezier(0.77, 0.2, 0.05, 1),
+        background 0.5s cubic-bezier(0.77, 0.2, 0.05, 1),
+        opacity 0.55s ease;
 }
+
+.menu-toggle--expanded span {
+    opacity: 1;
+    transform: rotate(-45deg) translate(-7px, 8px);
+    background: white;
+}
+
+.menu-toggle--expanded span:nth-child(2) {
+    opacity: 0;
+    transform: rotate(0deg) scale(0.2, 0.2);
+}
+
+.menu-toggle--expanded span:last-child {
+    transform: rotate(45deg) translate(-3px, -4px);
+}
+
+/***** mobile toggle menu *****/
 
 .mobile-menu {
     position: absolute;
-    inset: 0 0 auto;
-    padding: 16px 20px 20px;
-    background: rgba(252, 250, 247, 0.96);
-}
-
-.mobile-menu__close {
-    margin-left: auto;
-    display: grid;
-    place-items: center;
-    width: 44px;
-    height: 44px;
-    border: 0;
-    background: transparent;
-    color: #6c7f9f;
-    font-size: 52px;
-    line-height: 1;
-    cursor: pointer;
-}
-
-.mobile-menu__panel {
-    width: min(210px, 72vw);
-    margin-left: auto;
-    border-radius: 16px;
+    top: 0;
+    right: 0;
+    width: 72vw;
+    min-height: 100vh;
+    border-radius: 16px 0 0 16px;
     overflow: hidden;
     background: #8396b6;
-    box-shadow: var(--shadow);
+    box-shadow: var(--mobile-nav-shadow);
+    transition: transform 0.5s cubic-bezier(0.77, 0.2, 0.05, 1);
+    padding: 70px 0;
+    transform: translateX(200%);
 }
 
-.mobile-menu__panel a {
+.mobile-menu a {
     display: block;
     padding: 18px 20px;
     font-size: 18px;
@@ -200,12 +209,19 @@ button {
     border-bottom: 1px solid rgba(255, 255, 255, 0.35);
 }
 
-.mobile-menu__panel a:last-child {
+.mobile-menu a:last-child {
     border-bottom: 0;
 }
 
+.mobile-menu--expanded {
+    transform: translateX(0%);
+}
+
+/***** hero section *****/
+
 .hero {
     padding-top: 18px;
+    margin-top: 70px;
 }
 
 .hero__grid {
@@ -354,6 +370,7 @@ button {
 }
 
 .point-card {
+    position: relative;
     display: flex;
     align-items: center;
     padding: 16px 28px;
@@ -649,10 +666,13 @@ button {
 }
 
 .faq-item summary {
-    position: relative;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 12px;
     list-style: none;
     cursor: pointer;
-    padding: 22px 36px 22px 0;
+    padding: 22px 12px 22px 0;
     font-size: 22px;
     font-weight: 700;
 }
@@ -661,22 +681,46 @@ button {
     display: none;
 }
 
-.faq-item summary::after {
-    content: "+";
-    position: absolute;
-    right: 0;
-    top: 50%;
-    transform: translateY(-50%);
-    color: #7387aa;
-    font-size: 28px;
+.plusminus {
+    position: relative;
+    width: 15px;
+    height: 15px;
+    cursor: pointer;
+    flex-shrink: 0;
 }
 
-.faq-item[open] summary::after {
-    content: "–";
+.plusminus::before,
+.plusminus::after {
+    content: "";
+    display: block;
+    background-color: #7387aa;
+    position: absolute;
+    top: 50%;
+    left: 0;
+    transition: 0.35s;
+    width: 100%;
+    height: 3px;
+}
+
+.plusminus:before {
+    transform: translatey(-50%);
+}
+
+.plusminus:after {
+    transform: translatey(-50%) rotate(90deg);
+}
+
+.faq-item[open] .plusminus:before {
+    transform: translatey(-50%) rotate(-90deg);
+    opacity: 0;
+}
+
+.faq-item[open] .plusminus:after {
+    transform: translatey(-50%) rotate(0);
 }
 
 .faq-item p,
-.faq-item div {
+.faq-item .content {
     margin: 0 0 14px;
 }
 
@@ -791,7 +835,8 @@ button {
 #about,
 #process,
 #reviews,
-#pricing {
+#pricing,
+#top {
     scroll-margin-top: 55px;
 }
 
@@ -820,10 +865,6 @@ button {
 
     .menu-toggle {
         display: block;
-    }
-
-    .header {
-        position: relative;
     }
 
     .container {
@@ -1131,13 +1172,5 @@ button {
 
     .hero .button {
         margin-top: 38px;
-    }
-
-    #coaching,
-    #about,
-    #process,
-    #reviews,
-    #pricing {
-        scroll-margin-top: 0;
     }
 }
